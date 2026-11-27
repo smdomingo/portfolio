@@ -60,8 +60,7 @@ h2 { font-size: clamp(2.05rem, 4.2vw, 3.45rem); line-height: 1.05; }
 .split { display: grid; grid-template-columns: minmax(12rem, .9fr) minmax(0, 1.45fr); align-items: start; gap: 1rem clamp(2rem, 7vw, 6rem); }
 .prose p { max-width: 62ch; color: var(--muted); }
 .prose p + p { margin-top: .85rem; }
-.topics, .profile-links { display: flex; flex-wrap: wrap; gap: .6rem .85rem; margin-top: 1.05rem; list-style: none; }
-.topics li { padding: .28rem .65rem; border: 1px solid var(--line); border-radius: .3rem; color: var(--accent); font-size: .9rem; font-weight: 580; }
+.profile-links { display: flex; flex-wrap: wrap; gap: .6rem .85rem; margin-top: 1.05rem; list-style: none; }
 .career-list { list-style: none; border-left: 2px solid var(--line); padding-left: 1.3rem; }
 .career-list li { padding-bottom: 1.45rem; }
 .career-list li:last-child { padding-bottom: 0; }
