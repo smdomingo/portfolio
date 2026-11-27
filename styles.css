@@ -43,7 +43,6 @@ h1, h2 { font-family: var(--display); font-weight: 400; letter-spacing: -.045em;
 h1 { font-size: clamp(3rem, 7.2vw, 7rem); line-height: .98; margin-block: .85rem 1.25rem; }
 .honorific { font-size: .64em; }
 .role { font-weight: 740; }
-.intro { max-width: 47ch; margin-top: .65rem; color: var(--muted); font-size: clamp(1.03rem, 1.6vw, 1.2rem); }
 .actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
 .button { display: inline-block; padding: .7rem 1.05rem; border: 1px solid var(--accent); border-radius: .4rem; text-decoration: none; font-weight: 680; }
 .primary { background: var(--accent); color: white; }
@@ -69,6 +68,10 @@ h2 { font-size: clamp(2.05rem, 4.2vw, 3.45rem); line-height: 1.05; }
 .career-list h3 { margin-top: .25rem; }
 .career-list h3 + p { margin-top: .35rem; color: var(--muted); }
 .career-logo { display: block; width: 11rem; max-width: 100%; height: auto; margin-top: .65rem; padding: .5rem .65rem; border-radius: .35rem; background: var(--accent-dark); }
+.university-connections { margin-top: 2rem; }
+.university-logos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin-top: .85rem; padding: 1rem; list-style: none; border: 1px solid var(--line); border-radius: .55rem; background: var(--paper); }
+.university-logos li { display: flex; flex-direction: column; align-items: center; gap: .5rem; text-align: center; font-size: .9375rem; font-weight: 650; }
+.university-logos img { display: block; width: min(100%, 10.5rem); height: 3.75rem; object-fit: contain; }
 .career-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
 .career-details section { padding: 1.2rem 1.4rem; border: 1px solid var(--line); border-radius: .55rem; background: var(--paper); }
 .career-details h3 { margin-top: 0; }
@@ -105,4 +108,5 @@ h3 a { color: var(--ink); text-decoration-color: #aa98c5; }
 
 @media (max-width: 35rem) {
   .publication-grid, .project-grid, .career-details { grid-template-columns: 1fr; }
+  .university-logos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
