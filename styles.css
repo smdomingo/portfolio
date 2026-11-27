@@ -62,7 +62,7 @@ h2 { font-size: clamp(2.05rem, 4.2vw, 3.45rem); line-height: 1.05; }
 .profile-links { display: flex; flex-wrap: wrap; gap: .6rem .85rem; margin-top: 1.05rem; list-style: none; }
 .career-overview {
   display: grid;
-  grid-template: "title title" auto "timeline connections" 1fr / minmax(0, 1.55fr) minmax(0, 1fr);
+  grid-template: "title title" auto "connections timeline" 1fr / minmax(0, 1fr) minmax(0, 1.55fr);
   align-items: start;
   gap: clamp(1.6rem, 3vw, 2.35rem) clamp(1.5rem, 5vw, 4rem);
 }
@@ -110,7 +110,7 @@ h3 a { color: var(--ink); text-decoration-color: #aa98c5; }
 @media (max-width: 48rem) {
   .container { width: min(71rem, calc(100% - 2rem)); }
   .hero-inner, .split, .teaching-layout { grid-template-columns: 1fr; }
-  .career-overview { grid-template: "title" "timeline" "connections" / minmax(0, 1fr); }
+  .career-overview { grid-template: "title" "connections" "timeline" / minmax(0, 1fr); }
   .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
