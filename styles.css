@@ -33,14 +33,13 @@ nav { display: flex; flex-wrap: wrap; column-gap: clamp(.9rem, 2.5vw, 2rem); row
 nav a { color: var(--muted); font-size: .9375rem; font-weight: 600; }
 nav a:hover { text-decoration: underline; }
 
-.hero { padding-block: clamp(2.5rem, 6vw, 5rem) clamp(2.1rem, 4vw, 3rem); background: var(--tint); border-bottom: 1px solid var(--line); }
-.hero-inner { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); align-items: center; gap: clamp(1.5rem, 5vw, 4.5rem); }
-.hero-profile { display: flex; align-items: center; gap: .9rem; }
-.profile-portrait { flex: none; display: block; width: 6.25rem; height: 6.25rem; object-fit: cover; border: 2px solid var(--paper); border-radius: 50%; box-shadow: 0 0 0 1px var(--line); }
+.hero { padding-block: clamp(2.5rem, 6vw, 5rem); background: var(--tint); border-bottom: 1px solid var(--line); }
+.hero-inner { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: clamp(1.35rem, 4vw, 3rem); }
+.profile-portrait { display: block; width: clamp(6.25rem, 12vw, 9rem); height: auto; aspect-ratio: 1; object-fit: cover; border: 2px solid var(--paper); border-radius: 50%; box-shadow: 0 0 0 1px var(--line); }
 .eyebrow, .meta { color: var(--accent); font-size: .875rem; font-weight: 700; }
 .eyebrow { letter-spacing: .1em; text-transform: uppercase; }
 h1, h2 { font-family: var(--display); font-weight: 400; letter-spacing: -.045em; }
-h1 { font-size: clamp(3rem, 7.2vw, 7rem); line-height: .98; margin-block: .85rem 1.25rem; }
+h1 { font-size: clamp(2.6rem, 6.1vw, 5.7rem); line-height: 1.03; margin-block: .7rem 1rem; text-wrap: balance; }
 .honorific { font-size: .64em; }
 .role { font-weight: 740; }
 .actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
@@ -49,8 +48,6 @@ h1 { font-size: clamp(3rem, 7.2vw, 7rem); line-height: .98; margin-block: .85rem
 .primary:hover { background: var(--accent-dark); color: white; }
 .secondary { background: var(--paper); }
 .secondary:hover { background: #ebe5f5; }
-.teaching-philosophy { padding: clamp(1.25rem, 3vw, 2rem); border: 1px solid var(--line); border-top: .2rem solid var(--accent); border-radius: .6rem; background: var(--paper); }
-.teaching-philosophy h2 { margin-bottom: .8rem; font-size: clamp(1.85rem, 3.3vw, 2.65rem); }
 
 .career-figure { min-width: 0; margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: .75rem; background: var(--paper); }
 .career-figure img { display: block; width: 100%; height: auto; }
