@@ -65,24 +65,26 @@ h2 { font-size: clamp(2.05rem, 4.2vw, 3.45rem); line-height: 1.05; }
 .profile-links { display: flex; flex-wrap: wrap; gap: .6rem .85rem; margin-top: 1.05rem; list-style: none; }
 .career-overview {
   display: grid;
-  grid-template: "title timeline" auto "connections timeline" 1fr / minmax(0, .95fr) minmax(0, 1.4fr);
+  grid-template: "title title" auto "timeline connections" 1fr / minmax(0, 1.55fr) minmax(0, 1fr);
   align-items: start;
-  gap: 1.2rem clamp(1.5rem, 5vw, 4rem);
+  gap: clamp(1.6rem, 3vw, 2.35rem) clamp(1.5rem, 5vw, 4rem);
 }
 .career-overview > h2 { grid-area: title; }
-.career-list { grid-area: timeline; list-style: none; border-left: 2px solid var(--line); padding-left: 1.3rem; }
-.career-list li { padding-bottom: 1.45rem; }
+.career-list { grid-area: timeline; margin: 0 .35rem; padding: 0; border-inline-start: 1px solid var(--line); list-style: none; }
+.career-list li { position: relative; padding: 0 0 1.8rem 1.35rem; }
+.career-list li::before { content: ""; position: absolute; inset-block-start: .43rem; inset-inline-start: -.315rem; width: .59rem; height: .59rem; border: 1px solid var(--accent); border-radius: 50%; background: var(--tint); }
+.career-list li:first-child::before { background: var(--accent); }
 .career-list li:last-child { padding-bottom: 0; }
-.career-list h3 { margin-top: .25rem; }
-.career-list h3 + p { margin-top: .35rem; color: var(--muted); }
-.career-logo { display: block; width: 7.5rem; max-width: 100%; height: auto; margin-top: .65rem; border-radius: .35rem; }
-.university-connections { grid-area: connections; }
-.university-connections h3 { margin-top: 0; }
-.university-logos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: .85rem; padding: 1rem; list-style: none; border: 1px solid var(--line); border-radius: .55rem; background: var(--paper); }
-.university-logos li { display: flex; flex-direction: column; align-items: center; gap: .5rem; text-align: center; font-size: .9375rem; font-weight: 650; }
-.university-logos img { display: block; width: min(100%, 10.5rem); height: 4.25rem; object-fit: contain; }
-.career-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
-.career-details section { padding: 1.2rem 1.4rem; border: 1px solid var(--line); border-radius: .55rem; background: var(--paper); }
+.career-list h3 { margin-block: .25rem; }
+.career-list .career-institution { color: var(--accent-dark); font-weight: 650; }
+.career-institution + p { margin-top: .4rem; color: var(--muted); }
+.university-connections { grid-area: connections; padding: clamp(1rem, 2.2vw, 1.5rem); border: 1px solid var(--line); border-radius: .55rem; background: var(--paper); }
+.university-connections h3 { margin: 0; padding-bottom: .85rem; border-bottom: 1px solid var(--line); }
+.university-logos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem .85rem; padding-top: 1rem; list-style: none; }
+.university-logos li { display: grid; grid-template-rows: 3.65rem auto; justify-items: center; align-content: start; gap: .55rem; text-align: center; font-size: .875rem; font-weight: 620; line-height: 1.4; }
+.university-logos img { display: block; width: min(100%, 9.5rem); height: 3.65rem; object-fit: contain; }
+.career-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem clamp(1.5rem, 5vw, 4rem); margin-top: 2rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+.career-details section { padding: .45rem 0; }
 .career-details h3 { margin-top: 0; }
 .career-details p, .career-details ul { margin-top: .55rem; color: var(--muted); }
 .career-details ul { padding-inline-start: 1.15rem; }
