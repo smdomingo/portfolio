@@ -68,6 +68,7 @@ h2 { font-size: clamp(2.05rem, 4.2vw, 3.45rem); line-height: 1.05; }
 .career-list li:last-child { padding-bottom: 0; }
 .career-list h3 { margin-top: .25rem; }
 .career-list h3 + p { margin-top: .35rem; color: var(--muted); }
+.career-logo { display: block; width: 11rem; max-width: 100%; height: auto; margin-top: .65rem; padding: .5rem .65rem; border-radius: .35rem; background: var(--accent-dark); }
 .teaching-layout { display: grid; align-items: center; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: clamp(1.25rem, 5vw, 4rem); }
 .teaching-layout h2 { margin-bottom: .85rem; }
 
