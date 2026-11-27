@@ -69,9 +69,10 @@ h2 { font-size: clamp(2.05rem, 4.2vw, 3.45rem); line-height: 1.05; }
 .career-list h3 + p { margin-top: .35rem; color: var(--muted); }
 .career-logo { display: block; width: 11rem; max-width: 100%; height: auto; margin-top: .65rem; padding: .5rem .65rem; border-radius: .35rem; background: var(--accent-dark); }
 .university-connections { margin-top: 2rem; }
-.university-logos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin-top: .85rem; padding: 1rem; list-style: none; border: 1px solid var(--line); border-radius: .55rem; background: var(--paper); }
+.university-logos { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1rem; margin-top: .85rem; padding: 1rem; list-style: none; border: 1px solid var(--line); border-radius: .55rem; background: var(--paper); }
 .university-logos li { display: flex; flex-direction: column; align-items: center; gap: .5rem; text-align: center; font-size: .9375rem; font-weight: 650; }
 .university-logos img { display: block; width: min(100%, 10.5rem); height: 3.75rem; object-fit: contain; }
+.university-logos .logo-on-dark { padding: .5rem .65rem; border-radius: .35rem; background: var(--accent-dark); }
 .career-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
 .career-details section { padding: 1.2rem 1.4rem; border: 1px solid var(--line); border-radius: .55rem; background: var(--paper); }
 .career-details h3 { margin-top: 0; }
@@ -98,6 +99,10 @@ h3 a { color: var(--ink); text-decoration-color: #aa98c5; }
 .publication h3 ~ p, .project h3 + p { margin-top: .65rem; color: var(--muted); }
 .publication .venue { font-size: .9375rem; font-style: italic; }
 .site-footer { border-top: 1px solid var(--line); color: var(--muted); }
+
+@media (max-width: 62rem) {
+  .university-logos { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
 
 @media (max-width: 48rem) {
   .container { width: min(71rem, calc(100% - 2rem)); }
