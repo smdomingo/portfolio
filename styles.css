@@ -74,6 +74,10 @@ h2 { font-size: clamp(2.05rem, 4.2vw, 3.45rem); line-height: 1.05; }
 .section-head a, .profile-links a { font-weight: 650; }
 .publication-grid, .project-grid { display: grid; gap: 1rem; }
 .publication-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.publication-archive { margin-top: 1.25rem; padding-block: .9rem; border-block: 1px solid var(--line); }
+.publication-archive summary { color: var(--accent); font-weight: 650; cursor: pointer; }
+.publication-archive summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.publication-archive .publication-grid { margin-top: 1rem; }
 .project-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .publication, .project { padding: clamp(1.15rem, 2.6vw, 1.6rem); border: 1px solid var(--line); border-radius: .55rem; }
 .publication { background: var(--paper); }
